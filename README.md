@@ -7,3 +7,5 @@
 - Install Angular feel free to download the latest version Angular is backward compatible from [here](https://cli.angular.io/).
 - Install [express](https://www.npmjs.com/package/express).
 - Install [MongoDB](https://docs.mongodb.com/manual/administration/install-community/)
+- Assignment 1 guidelines: [Assignment 1](https://docs.google.com/document/d/17YLnw8sF11bNgy3yubsPMB4kOsk1Nn5Lpt3W83_MOIs/edit?usp=sharing)
+- Assignment submission guide: -> Make a folder with your name as title in the Assignment 1 subfolder under Assignments directory and submit your assignments there.
