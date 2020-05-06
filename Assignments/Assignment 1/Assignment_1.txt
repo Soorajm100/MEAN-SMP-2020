@@ -1,0 +1,29 @@
+Assignment 1
+ You have to design a news website with following specifications. 
+
+
+1. Make the application responsive.
+2. Place a logo on the top left corner. (can be anything)
+3. Provide an image caption in all the images you have used and use float options(at required
+places).
+4. Create a log-in (2 input fields), Sign up (minimum 6 fields) forms, and Subscription form.
+5. Do basic validation of these forms(on submit, on click).
+6. In subscription form provide weekly, monthly, yearly subscription and allow the user to
+choose the required option and calculate the total amount to be paid using javascript.
+7. Using DOM access parent, child, and sibling nodes in the console.
+8. Use document methods in appropriate places.
+9. Provide window methods (alert, prompt, confirm boxes) at required places.
+10. Design a form to get an input of number, based on the number generate a random number
+and provide some subscription freebie to the customers.
+11. Add a comment section at the end of the webpage. Two text boxes should be there for the name of the person posting and the contents of the comment. Both fields should be mandatory. And show the comments on the page itself in a fixed size div (make it scrollable if possible).
+(Use all three different types of CSS files in your application.Use different tags of HTML5 (mark,meter,summary,article,nav,canvas etc.,) 
+Eg: (just for reference)    
+  
+
+
+
+
+
+
+
+If you have any doubts you can post the doubts on Slack or Pm anyone of us. The due date for the assignment would be 6th May 23.59PM.
