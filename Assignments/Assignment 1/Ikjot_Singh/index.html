@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Today's News</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="sweetalert2.all.min.js"></script>
+<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+<script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
+  
+</head>
+<body class="bg-light">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fadeInDown" style="position: fixed;">
+    <a class="navbar-brand" href="#">Categories</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" href="#nitk">NITK</a>
+            </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#sports">Sports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#business">Business</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#world">World</a>
+        </li>    
+      </ul>
+    </div>  
+  </nav>
+<div class="mainbar fadeInDown first" style="margin-bottom: 0em;height: 190px;">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRtUHYub70EIXb0LFZeqNuJNTq6DBB2jMfosgVOYiX6d5FtXq_k&usqp=CAU" alt="News Logo" style="float: left;height: 70px;vertical-align: middle;">
+    <h2 id="date" style="text-align: center; vertical-align: middle;"></h2>
+    <script>
+        document.getElementById("date").innerHTML = Date().substring(0,15);
+    </script>
+    <br>
+    <br>
+    <div id='greetings'>
+      Welcome
+    </div>
+    <div class="login">
+    <a href="login.html" class="link">Login</a> 
+    </div>
+    <div class="subscribe">
+      <a href="subscription.html" class="link">Subscribe</a> 
+    </div>
+    
+</div>
+
+<p id="nitk"></p>
+<div class="jumbotron" style="margin: 0;" id="sports"><h1 style="font-family: 'Poppins' ;text-align: center;">Sports</h1><h3>Exclusive News</h3></div>
+<div class="row">
+  <div class="col-sm-9">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin: 40px;">
+    
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+      
+      <div class="carousel-inner">
+        <div class="item active" style="font-size: 30px;">
+  
+          Serie A teams can start individual training, says interior ministry
+          <div style="width:image width px; font-size:80%; text-align:center;"><img src="https://images.indianexpress.com/2020/05/juventus-serie-a.jpg?resize=450,250"  width="width" height="height" style="padding-bottom:0.5em;" /><br>Individual teams resume play</div>
+        </div>
+  
+        <div class="item" style="font-size: 30px;">
+          Pakistan players deliberately played badly in conspiracy against Younis Khan’s captaincy: Rana Naved
+          <div style="width:image width px; font-size:80%; text-align:center;"><img src="https://images.indianexpress.com/2020/05/Rana-Naveed-759.jpg?resize=450,250"  width="width" height="height" style="padding-bottom:0.5em;" /><br>Pakistan players play bad deliberately</div>
+        </div>
+           
+        <div class="item" style="font-size: 30px;">
+          Ellyse Perry finally responds to Murali Vijay’s dinner request
+          <div style="width:image width px; font-size:80%; text-align:center;"><img src="https://images.indianexpress.com/2020/05/Ellyse-Perry-Vijay.jpg?resize=450,250"  width="width" height="height" style="padding-bottom:0.5em;" /><br>Ellyse Perry's witty reply</div>
+        </div>
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <div class="col-sm-3" style="overflow-y:scroll; height: 400px;">
+    <ul style="list-style-type:none;">
+      <li>
+        <div class="sportscard">
+          <img src="https://images.indianexpress.com/2020/01/sania-mirza.jpg?resize=450,250" alt="" style="float: left;">
+          <div class="card-body">
+            India has learnt to accept female athletes but still a long way to go: Sania Mirza
+          </div>
+        </div>
+        <div class="sportscard">
+          <img src="https://images.indianexpress.com/2020/05/sports-stars-in-lockdown.jpg?resize=450,250" alt="" style="float: left;">
+          <div class="card-body">
+            Sports stars lockdown live: How superstars are interacting on social media today
+          </div>
+        </div>
+        <div class="sportscard">
+          <img src="https://images.indianexpress.com/2019/07/eoin_759.jpg?resize=450,250" alt="" style="float: left;">
+          <div class="card-body">
+            Eoin Morgan bats for T10 format at Olympics and Commonwealth Games
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <br>
+
+</div>
+<h3>Headline of the day</h3>
+<div class="row" style="height: 300px;">
+  <div class="col-sm-6 justify-content-center">
+    <h4>
+      Testing the waters. Tennis gets back on the court.
+    </h4>
+    <br>
+    <img src="https://images.indianexpress.com/2020/05/Yannick-Hanfmann-759.jpg?w=550" alt="">
+    <br>
+    Yannick Hanfmann
+  </div>
+  <div class="col-sm-6 justify-content-center">
+    <img src="https://images.indianexpress.com/2019/02/mccullum-759.jpg?resize=650,350" alt="">
+    <h5>Brendon McCullum calls for a Kiwi team in Big Bash League</h5>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="jumbotron" style="margin: 0;" id="world"><h1 style="font-family: 'Poppins' ;text-align: center;">World</h1><h3>Exclusive News</h3></div>
+<div class="row">
+  <div class="col-sm-9">
+    <div id="myCarousel1" class="carousel slide" data-ride="carousel" style="margin: 40px;">
+    
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel1" data-slide-to="1"></li>
+        <li data-target="#myCarousel1" data-slide-to="2"></li>
+      </ol>
+  
+      
+      <div class="carousel-inner">
+        <div class="item active" style="font-size: 30px;">
+  
+          Top UK government scientist quits after breaking COVID-19 lockdown rules
+          <div style="width:image width px; font-size:80%; text-align:center;"><img src="https://images.indianexpress.com/2020/05/coronavirus-759-3.jpg?resize=450,250"  width="width" height="height" style="padding-bottom:0.5em;" /><br>UK Scientist quits</div>
+        </div>
+  
+        <div class="item" style="font-size: 30px;">
+          China asks Mike Pompeo to show ‘enormous evidence’ of COVID-19 originating from Wuhan lab
+          <div style="width:image width px; font-size:80%; text-align:center;"><img src="https://images.indianexpress.com/2020/01/mike-pompeo-7.jpg?resize=450,250"  width="width" height="height" style="padding-bottom:0.5em;" /><br>Evidence required</div>
+        </div>
+           
+        <div class="item" style="font-size: 30px;">
+          Why has eastern Europe seen fewer Covid-19 cases, deaths than west?
+          <div style="width:image width px; font-size:80%; text-align:center;"><img src="https://images.indianexpress.com/2020/05/CZECH.jpg?resize=450,250"  width="width" height="height" style="padding-bottom:0.5em;" /><br>Eastern Europe Faring better against COVID-19</div>
+        </div>
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <div class="col-sm-3" style="overflow-y:scroll; height: 400px;">
+    <ul style="list-style-type:none;">
+      <li>
+        <div class="sportscard">
+          <img src="https://images.indianexpress.com/2020/04/covid-test-2.jpg?resize=450,250" alt="" style="float: left;">
+          <div class="card-body">
+            Italian firm claims to have developed vaccine that neutralises coronavirus in human cells
+          </div>
+        </div>
+        <div class="sportscard">
+          <img src="https://images.indianexpress.com/2019/09/antonio-guterres-759.jpg?resize=450,250" alt="" style="float: left;">
+          <div class="card-body">
+            UN leader says 1 billion people with disabilities hard hit by coronavirus
+          </div>
+        </div>
+        <div class="sportscard">
+          <img src="https://images.indianexpress.com/2020/05/germany-7.jpg?resize=450,250" alt="" style="float: left;">
+          <div class="card-body">
+            Coronavirus: A dry spell in Germany’s beer region
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <br>
+
+</div>
+<h3>Headline of the day</h3>
+<div class="row" style="height: 300px;">
+  <div class="col-sm-6 justify-content-center">
+    <h4>
+      Germany: Drive-in cinemas are booming amid Covid-19 restrictions
+    </h4>
+    <br>
+    <img src="https://images.indianexpress.com/2020/05/drive-in-theatre.jpg?resize=450,250" alt="">
+    <br>
+    Drive-in cinemas
+  </div>
+  <div class="col-sm-6 justify-content-center">
+    <img src="https://images.indianexpress.com/2020/04/AFGHAN-VIRUS-759.jpg?resize=650,350" alt="">
+    <h5>Afghan could’ve one of highest COVID-19 infection rates in world: Global migration agency</h5>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="jumbotron" style="margin: 0;" id="business"><h1 style="font-family: 'Poppins' ;text-align: center;">Business</h1><h3>Exclusive News</h3></div>
+<div class="row">
+  <div class="col-sm-9">
+    <div id="myCarousel2" class="carousel slide" data-ride="carousel" style="margin: 40px;">
+    
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel2" data-slide-to="1"></li>
+        <li data-target="#myCarousel2" data-slide-to="2"></li>
+      </ol>
+  
+      
+      <div class="carousel-inner">
+        <div class="item active" style="font-size: 30px;">
+  
+          Footwear sector revenue may drop by 10-15% in FY21: Icra
+          <div style="width:image width px; font-size:80%; text-align:center;"><img src="https://images.indianexpress.com/2018/06/footwear-1838767_1280.jpg?resize=450,250"  width="width" height="height" style="padding-bottom:0.5em;" /><br>Footwear sector revenue drop</div>
+        </div>
+  
+        <div class="item" style="font-size: 30px;">
+          COVID-19: Govt extends validity of Motor Vehicle Act related documents till Jun 30
+          <div style="width:image width px; font-size:80%; text-align:center;"><img src="https://images.indianexpress.com/2020/04/AB-20200423-161540.jpg?resize=450,250"  width="width" height="height" style="padding-bottom:0.5em;" /><br>Validity of MVA extended</div>
+        </div>
+           
+        <div class="item" style="font-size: 30px;">
+          Yes Bank case: ED files chargesheet against Rana Kapoor
+          <div style="width:image width px; font-size:80%; text-align:center;"><img src="https://images.indianexpress.com/2020/03/rana-kapoor-3.jpg?resize=450,250"  width="width" height="height" style="padding-bottom:0.5em;" /><br>Chargesheet against Rana Kapoor</div>
+        </div>
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <div class="col-sm-3" style="overflow-y:scroll; height: 400px;">
+    <ul style="list-style-type:none;">
+      <li>
+        <div class="sportscard">
+          <img src="https://images.indianexpress.com/2017/06/oatar-759.jpg?resize=450,250" alt="" style="float: left;">
+          <div class="card-body">
+            Stung by virus, long-haul carrier Qatar Airways cuts jobs
+          </div>
+        </div>
+        <div class="sportscard">
+          <img src="https://images.indianexpress.com/2020/04/rupani-75.jpg?resize=450,250" alt="" style="float: left;">
+          <div class="card-body">
+            Gujarat: Allow salary cuts of employees — Industrial bodies write to govt
+          </div>
+        </div>
+        <div class="sportscard">
+          <img src="https://images.indianexpress.com/2020/02/car-sales-maruti-showroom-bloomberg-759.jpg?resize=450,250" alt="" style="float: left;">
+          <div class="card-body">
+            Maruti introduces new norms for dealerships amid COVID-19 pandemic
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <br>
+
+</div>
+<h3>Headline of the day</h3>
+<div class="row" style="height: 300px;">
+  <div class="col-sm-6 justify-content-center">
+    <h4>
+      Oil marketing companies’ shares drop up to 13% on hike in excise duty
+    </h4>
+    <br>
+    <img src="https://images.indianexpress.com/2020/01/hp-hindustan-petroleum-759.jpg?resize=550,250" alt="">
+    <br>
+    Oil marketing shares drop
+  </div>
+  <div class="col-sm-6 justify-content-center">
+    <img src="https://images.indianexpress.com/2019/12/service-sector-759.jpg?resize=650,350" alt="">
+    <h5>Lockdown pulls India’s service sector activity to standstill in Apr; PMI hits record low</h5>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <a class="twitter-timeline" data-width="100%" data-height="550" data-theme="light" href="https://twitter.com/nitksurathkal?ref_src=twsrc%5Etfw">Tweets by nitksurathkal</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<div class="container-fluid p-3 my-3 bg-dark text-white">
+  <div><h3>Leave a comment</h3></div>
+  <form class="form-group">
+    <input type="text" placeholder="Your Name" style="display: block; margin: 0 auto;" id="commentname">
+    <br>
+    <input type="text" placeholder="Leave a comment" style="display: block; margin: 0 auto;" id="commentbody">
+    <br>
+    <button type="button" class="btn btn-default" onclick="submitcomment()" style="display: block; margin: 0 auto;">Submit comment</button>
+  </form>
+  <div id="comments" style="overflow-y: scroll; height:400px;">
+    <h3>
+      Comments
+      
+    </h3>
+  </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+  
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+function submitcomment(){
+  var name="  "+document.getElementById('commentname').value;
+  var comment=document.getElementById('commentbody').value;
+  document.getElementById('comments').innerHTML+="<div class='container-fluid bg-light text-dark'><div class='avatar hovercard'><a href='https://disqus.com/by/wilkins_consulting/'' data-action='profile' data-username='wilkins_consulting' target='_blank' rel='noopener noreferrer' class='user' data-tid='152'><img data-role='user-avatar'  src='https://c.disquscdn.com/uploads/users/2627/2653/avatar92.jpg?1360617238' alt='Avatar' style='float:left;' align='left'></a></div><h4>"+name+" "+"says</h4><h5>"+comment+"</h5></div><br>"
+}
+</script>
+</body>
+</html>
+
+
+<!--caption style as follows
+<div style="width:image width px; font-size:80%; text-align:center;"><img src="URL" alt="alternate text" width="width" height="height" style="padding-bottom:0.5em;" />This is my caption</div>
+-->

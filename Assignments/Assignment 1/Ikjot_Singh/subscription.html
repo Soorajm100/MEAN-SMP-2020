@@ -1,0 +1,82 @@
+<html>
+    <head>
+      <script src="index.js"></script>
+        <link rel="stylesheet" href="subscription.css">
+        <script src="sweetalert2.all.min.js"></script>
+        <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+        <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+        <script src="sweetalert2.min.js"></script>
+        <link rel="stylesheet" href="sweetalert2.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      
+    </head>
+    <body style="background-color: azure;">
+      <div id="success">
+      </div>
+      <center class='fadeIn second'>
+        <label for="emailid" style="color: blue;text-align: center;"> Please enter your email ID</label>
+      <input id ='emailid' type="text" class="form-control" placeholder="Your Email" style="width: 400px;">
+      </center>
+        <div id="wrapper" class='fadeInDown' style="height: 700px;">
+            <div id="container" style="height: 700px;">
+              
+              <div class="card">
+                <div class="card-header" style="text-align: center;">
+                  Subscribe
+                </div>
+                <div class="card-body">
+                  <center>
+                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRtUHYub70EIXb0LFZeqNuJNTq6DBB2jMfosgVOYiX6d5FtXq_k&usqp=CAU" alt="Card image cap" style="height: 100px; width: 100px;">
+                  <h5 class="card-title">Choose a subscription out of the given options</h5>
+                  </center>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                
+                  <div class="card align-items-center" onclick="free()">
+                      <h2>Basic</h2>
+                      <p>Access To the online site</p>
+                      <p style="font-size: 20px;">Free</p>
+                  </div>
+                </div>
+                  <div class="col-md-4">
+                    <div class="card align-items-center" onclick="monthly()">
+                      <h2>Monthly</h2>
+                      <p>Personalized newsletter in your email and on your doorstep every week</p>
+                      <p style="font-size: 20px;">$12/month</p>
+                    </div>  
+                    
+                  </div>
+            
+                  <div class="col-md-4">
+                    <div class="card align-items-center" onclick="yearly()">
+                      <h2>Yearly</h2>
+                      <p>Save 63% on your monthly subscription in this upgraded pack</p>
+                      <p style="font-size: 20px;">$50/year</p>
+                    </div>
+                  </div>
+              </div>
+              <p ><h2 class="fadeIn fourth" style="text-align: center;">Want to avail a discount on these prices?</h2></p>
+              <div id='fdiscsection' class="fadeIn fourth">
+                <center id='discsection'>
+                  <label for="randomnum" style="color: blue;text-align: center;"> Enter a random number</label>
+                <input id ='randomnum' type="text" class="form-control" placeholder="Random Number" style="width: 400px;">
+                <p></p>
+                <button type="button" class="btn btn-info" onclick="discount()">Apply for the discount!</button>
+                <br>
+                </center>
+              </div>
+              
+               
+                
+              </div>
+              
+            </div>
+          </div>
+          <script>
+              
+          </script>  
+    </body>
+</html>
