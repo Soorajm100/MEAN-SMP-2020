@@ -1,0 +1,126 @@
+<html>
+<meta name =”viewport” content =”width=device-width, initial-scale=1.0”>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+function openWin(){
+window.open("p2.html");
+}
+function open1(){
+window.open("p3.html");
+}
+function openalert(){
+alert("You have logged in successfully ! ");
+}
+</script>
+
+<style>
+.header img {
+float : left ;
+width : 6vw;
+height:6vw;
+
+}
+.header h1{position : relative ;
+display : inline ;}
+</style>
+
+</head>
+
+<link rel="stylesheet" href="p1.css">
+
+<body>
+
+<div class = "header">
+<img src="logo.png"><h1 align = center> &nbsp  GLOBAL NEWS </h1>
+</div>
+<br><br>
+<form >
+ <div class="container" align="center">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+<br/><br/>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+<br/>
+    <button type="submit" onclick = "openalert()">Login</button>
+
+<p>Dont have an account ?</p>
+<button type="button" onclick="openWin()">Sign Up</button>
+<br><button type="button" onclick="open1()">Subscription</button>
+
+</div>
+</form>
+
+
+
+<h2>Coronavirus recovery plan 'must tackle climate change'</h2>
+<img src="img1.jpg" style={float:right; height:10vw ; width:15vw ;}>
+<p>Environment ministers from 30 countries are meeting in a two-day online conference in a bid to make progress on cutting greenhouse gas emissions.
+The gathering is called the "Petersberg Climate Dialogue".
+It will focus on how to organise a "green" economic recovery after the acute phase of the pandemic is over.
+The other aim is to forge international agreement on ambitious carbon cuts despite the postponement of the key conference COP26 - previously scheduled for Glasgow in November (now without a date).
+Alok Sharma, the UK Climate Secretary and president of COP26, said: "I am committed to increasing global climate ambition so that we deliver on the Paris Agreement (to stabilise temperature rise 
+well below 2C).</p>
+
+<form>
+<div class="container" align="center">
+<h2 align="center">LUCKY DRAW </h2>
+Enter a random number :<input type = "number" id = "num" >
+<button type="button" onclick="ran()">Generate Random Number</button>
+Your lucky number is : <p id="l"></p>
+
+<script>
+function ran(){
+var n = document.getElementById("num").value;
+document.getElementById("l").innerHTML = Math.floor(Math.random() * n);
+let arr= ['weekly','monthly','yearly'];
+alert("You've won an extra "+arr[Math.floor(Math.random() * arr.length) ]+" subscription ! ");
+}
+</script>
+</div>
+</form>
+
+<form>
+<h2 align = "center">COMMENT SECTION :</h2>
+<div class = "container" align = "center">
+Name : <input type="text" id="name" placeholder= "Enter Name" /><br><br>
+<textarea id="comment" placeholder="Type comment here" rows = "4" columns = "50" ></textarea><br>
+<button type="button" id="addcomment">Add Comment</button>
+</div>
+
+<div class id="container1">
+</div>
+</form>
+
+<script>
+function render(data){
+var html = "<div class = 'commentbox' align = 'center'><span>"+data.name+"</span><br><textarea>"+data.body+"</textarea></div>";
+$('#container1').append(html);	
+}
+</script>
+<script>
+$(document).ready(function(){
+var arr = [{name :"" , body : "" }];
+for(var i=1; i<arr.length;i++){
+	render(arr[i]);
+}
+$('#addcomment').click(function(){
+	console.log("button clicked");
+	var addobj = {
+		name : $("#name").val(),
+		body : $("#comment").val()
+};
+	arr.push(addobj);
+	render(addobj);
+	 $("#name").val(" ");
+	$("#comment").val(" ");
+});
+
+});
+</script>
+
+</body>
+
+</html>

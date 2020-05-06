@@ -1,0 +1,49 @@
+<html>
+<meta name =”viewport” content =”width=device-width, initial-scale=1.0”>
+<head id="h">
+<script>
+function myFunction() {
+
+  alert("Your Subscription selection has been recorded successfully ");
+}
+function amt(browser) {
+  document.getElementById("result").value = browser;
+}
+function openWin(){
+window.open("p1.html");
+}
+</script>
+</head>
+<link rel="stylesheet" href="p1.css">
+<body>
+
+<h2>SUBSCRIPTION FORM </h2>
+<form id = "f1">
+<div class = "container" align="center" id="d">
+<p id = "para">Please select your subscription:</p>
+<input type="radio" id="weekly" name="subscription" onclick ="amt(this.value)" value="100">
+<label for="weekly">Weekly</label><br>
+<input type="radio" id="monthly" name="subscription" onclick ="amt(this.value)" value="500">
+<label for="monthly">Monthly</label><br>
+<input type="radio" id="yearly" name="subscription" onclick ="amt(this.value)" value="1000">
+<label for="yearly">Yearly</label><br><br>
+Your payable amount is : <input type="text" id="result" width= 20vw> Rs<br>
+<button onclick="myFunction(),openWin()">Submit</button>
+<button type="button" onclick="f1(),f2()">Display nodes in console</button>
+<script>
+function f1(){
+var x = document.getElementById("para").parentNode.nodeName;
+console.log("the parent node of paragraph element is "+x);
+}
+
+function f2(){
+var x = document.getElementById("d").childNodes.length;
+console.log("the number of child nodes in division node(new lines are included) is "+x);
+}
+
+
+</script>
+</div>
+</form>
+</body>
+</html>
