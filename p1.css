@@ -1,0 +1,14 @@
+h2{font-size:3vw; color: #002080 ;font-family:"Lucida Console";}
+h1{font-size:6vw; color: #002080 ;font-family:"Lucida Console";width:30%;}
+p{font-size:1.5vw; font-family:"Lucida Console";}
+button {background-color: #0099cc;color: white;padding: 1.4vw 1vw;margin: 3vw 0;border: none;cursor: pointer;width: 20%;font-family:"Lucida Console";}
+button:hover {opacity: 0.8;}
+input[type=text], input[type=password],input[type=number] {width: 25vw;padding: 1.2vw 2vw;margin: 0.8vw 0display: inline-block;border: 0.1vw solid #ccc;box-sizing: border-box;font-family:"Lucida Console";}
+form {border: 0.3vw solid #f1f1f1;}
+hr {border: 1px solid #f1f1f1;margin-bottom: 25px;}
+.container {padding: 16px; background-color: white;font-family:"Lucida Console";}
+img{height: 12vw ; width:15vw;}
+.commentbox{width:90% ; height : 12vw ;}
+span{font-size:2vw; font-family:"Lucida Console";}
+textarea{width: 45vw;padding: 1.2vw 2vw;margin: 0.8vw 0display: inline-block;border: 0.1vw solid #ccc;box-sizing: border-box;font-family:"Lucida Console";}
+.commentbox textarea{font-size:1.5vw; color: #000033 ;font-family:"Lucida Console";}
