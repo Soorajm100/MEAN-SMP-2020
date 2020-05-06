@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <script>creatediv()</script>
+        <div class="wrapper fadeInDown">
+            <div id="existinguser">
+            </div>
+            <div id="formContent">
+              
+              <h2 class="active" onclick="signin()"> Sign In </h2>
+              <h2 class="inactive underlineHover" onclick="signup()">Sign Up </h2>
+          
+              
+              <div class="fadeIn first">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRtUHYub70EIXb0LFZeqNuJNTq6DBB2jMfosgVOYiX6d5FtXq_k&usqp=CAU" id="icon" alt="User Icon" />
+              </div>
+          
+              
+              <form>
+                <input type="text" id="login" class="fadeIn second" name="login" placeholder="Sign In">
+                <input type="text" id="password" class="fadeIn third" name="login" placeholder="Enter Password">
+                <div id="sign_up">
+
+                </div>
+                <input type="button" class="fadeIn fourth" value="Log In" onclick="submit_info()" id="submitbutton">
+                
+              </form>
+          
+              
+          
+            </div>
+          </div>  
+            
+    </body>
+</html>
