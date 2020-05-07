@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Newspaper :)</title>
+        <link rel="stylesheet" href="astylesheet.css">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <img src="https://i1.sndcdn.com/avatars-000228887415-y11o4w-t500x500.jpg" width="13%" alt="Alan Walker">
+                <h1>Just A Newspaper</h1>
+            </div>
+        </header>
+        <br>
+        <hr> 
+        <div class="link">
+            <a href="#login">LOGIN</a>
+        </div>
+        <br>
+        <div class="link">
+            <a href="#signup">SIGN UP</a>
+        </div>
+        <hr> 
+        <div>
+            <h2>TOP HEADLINES</h2>
+        </div>
+        <section>
+            <ul>
+                <li>
+                    <div>Kashmir</div>
+                    <details>
+                        <summary>Riyaz Naikoo, the top Hizbul Mujahideen terrorist who had never been caught, has been gunned down by security forces in a joint operation in his south Kashmir’s village on Wednesday.</summary>
+                        <p>
+                            Naikoo had come to meet his family on Tuesday and stayed overnight at a hideout in Awantipora’s Beighbora village. This was home turf.
+
+                            The 32-year-old, also known by his alias Zubair ul Islam and Bin Qasim, was counted among Kashmir’s most-experienced terrorists. On 5 June, Riyaz Naikoo would have completed eight years in the Hizbul Mujahideen, a rarity in a career where many don’t last for more than a few years. Security forces had come close to cornering him on several occasions; he managed to dodge them every time.
+                            
+                            But on Tuesday, Kashmir Police’s anti-militancy unit Special Operations Group (SOG) had pinpointed information about his movements. He was going to be in his village to meet his family and relatives. According to one account, the SOG had an idea where he would stay overnight.
+                            It was getting dark by the time a large contingent of Jammu and Kashmir police and the 21 Rashtriya Rifles started surrounding the village. “And then, they lay low, waiting for dawn to make the move,” a senior police officer said.
+
+                            A gun battle erupted early on Wednesday.
+
+                            He had been trapped and there was no way to escape.
+                        </p>
+                    </details>
+                </li>      
+                <br>  
+                <li>
+                    <div>Public Transport</div>
+                    <details>
+                        <summary>Public transport may resume soon with guidelines: Nitin Gadkari</summary>
+                        <p>
+                            NEW DELHI: Public transport services may resume operations soon and the government is formulating guidelines for safe usage adhering to social distancing norms to check the spread of coronavirus, Union minister Nitin Gadkari said on Wednesday.
+"Public transport is likely to resume soon... Guidelines will be there," road transport, highways and MSME minister Gadkari said addressing members of Bus and Car Operators Confederation of India through video conference.
+He said opening of transport and highways will go a long way in instilling confidence among the public and cautioned towards maintaining social distance and adopting all safety measures like hand wash, sanitizing, face masks, etc while operating buses and cars.
+                        </p>
+                    </details>
+                </li>
+                <br>
+                <li>
+                    <div>Corona Updates</div>
+                    <details>
+                        <summary>'Of course, we will share it with the world': Israel's ambassador to India on Covid-19 'breakthrough'</summary>
+                        <p>
+                            Israel's ambassador to India Ron Malka on Wednesday said that his country is an advanced stage of a breakthrough on developing an antibody to the novel coronavirus and is awaiting results of clinical trials.
+"The processes are not finalised, we are at an advanced stage, Yes, of course, we will share it with the world," Malka told ANI.
+The ambassador was responding to a question on whether clinical trials had begun and whether Israel was ready to share the know-how with others.
+He added that it was "too early to know if it is ready for mass development."
+Malka also said that the coronavirus crisis has brought India and Israel closer with the two countries sharing their best practices in combating the Covid-19 and facilitating new processes.
+On Monday, Israeli Defence Minister Naftali Bennett announced a "significant breakthrough" by the country's biological research institute in developing an antibody to Covid-19 infection.
+"I am proud of the biological Institute staff who have made a major breakthrough," said Bennett, adding that the "antibody can neutralize the virus within the bodies of those ill."
+                        </p>
+                    </details>
+                </li>
+            </ul>
+        </section>
+        <section id="login">
+            <div id="logindiv"><span>Login</span></div>
+            <form>
+                <label for="username">Username :</label>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="pswd">Password :</label>
+                <input type="password" id="pswd" name="password"><br><br>
+            </form>
+            <button onclick="login()">Login</button>
+        </section>
+        <section id="signup">
+            <div id="signupdiv"><span>Sign up</span></div>
+            <form>
+                <label for="email">email :</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="username">Username :</label>
+                <input type="text" id="username1" name="username"><br><br>
+                <label for="pswd1">Password :</label>
+                <input type="password" id="pswd1" name="password1"><br><br>
+                <label for="pswd2">Re-enter Password :</label>
+                <input type="password" id="pswd2" name="password2"><br><br>
+                <label for="country">Country :</label>
+                <input type="text" id="country" name="country"><br><br>
+                <label for="state">State :</label>
+                <input type="text" id="state" name="state"><br><br>
+            </form>
+            <button onclick="signup()">Sign up</button>
+        </section>
+        <footer>
+            <div>&copy; Just A Newspaper</div>
+            <div>All Rights Reserved</div>
+        </footer>
+        <script>
+            function login(){
+                var x=document.getElementById("username").value;
+                var y=document.getElementById("pswd").value;
+                console.log(x,y);
+                window.alert("Hello " + x);
+                document.getElementById("login").style.display="none";
+                document.getElementById("signup").style.display="none";
+            }
+            function signup(){
+                var x=document.getElementById("pswd1").value;
+                var y=document.getElementById("pswd2").value;
+                if(x!=y)
+                {
+                    window.alert("Passwords do not match \n Please re-enter");
+                    document.getElementById("pswd1").value="";
+                    document.getElementById("pswd2").value="";
+                }
+                else{
+                console.log(document.getElementById("email").value,document.getElementById("username1").value,
+                document.getElementById("country").value,document.getElementById("state").value,x);
+                window.alert("Hello " + document.getElementById("username1").value);
+                document.getElementById("login").style.display="none";
+                document.getElementById("signup").style.display="none";
+                }
+            }
+        </script>
+    </body>
+</html>
