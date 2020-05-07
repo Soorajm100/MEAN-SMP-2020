@@ -1,0 +1,58 @@
+body{
+    background-image: url(./bg8.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul{
+    float: right;
+}
+ul li{
+    display: inline-block;
+    padding: 30px;
+}
+ul li a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80px;
+    color: black;
+}
+button{
+    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+}
+button:hover{
+    background-color: yellowgreen;
+    cursor: pointer;
+  
+}
+article{
+    float: right;
+    margin-top: 300px;
+    margin-left: 2000px;
+    margin-right: 100px;
+    width: 300px;
+    height: 240px;
+    border: 2px solid black;
+    background-color: yellowgreen;
+    border-radius: 12px;
+}       
+article p{
+    font-size: 20px;
+    font-family: fantasy;
+    padding: 4px;
+}
+img{
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 100px;
+}
+
