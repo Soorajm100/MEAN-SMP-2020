@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Banana Republic: India's Largest Independent News Organisation</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1070px)" href="../css/phone.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:wght@700&family=Roboto+Slab:wght@100;700&display=swap"
+        rel="stylesheet">
+    <script src="../js/main.js"></script>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../assets/mainlogo.jpg" alt="">
+        </div>
+
+        <ul id="options">
+            <li id="choice"><a href="#home">Home</a></li>
+            <li id="choice"><a href="#service">Login/Sign Up</a></li>
+            <li id="choice"><a href="#offers">Offers</a></li>
+            <li id="choice"><a href="#subscribe">Subscribe</a></li>
+            <li id="choice"><a href="#reviews">Review Our Work</a></li>
+        </ul>
+
+
+    </nav>
+    <section id="home">
+        <h1 class="primary center">Welcome to the Banana Republic</h1>
+        <p class="secondary center">The Banana Republic (TBR) has been one of Asia's largest independent news networks
+            for the last two decades. TBR has always been known for it's groundbreaking and fearless journalism and
+            Under the leadership of Ravish Kumar (editor-in-chief and co-founder), we wish to continue to do so for
+            years to come.</p>
+
+        </div>
+
+    </section>
+    <section id="service">
+
+        <div id="services">
+            <div class="box" id="login">
+                <h2 class=" secondary center">LOGIN</h2>
+                <form name="loginform">
+                    <label for="userid">UserID:</label>
+                    <input type="text" required id='userid' name="id" placeholder="Enter UserID">
+                    <label for="password">Password:</label>
+                    <input type="password" required id="password" name="password" placeholder="Enter password">
+                    <center> <input type="submit" value="Submit" class="btn"></center>
+                </form>
+            </div>
+            <div class="box" id="signup">
+                <h2 class=" secondary center">SignUp</h2>
+                <form name="signupform" onsubmit="return validateSignUp()">
+                    <label for="fname">Full Name:</label>
+                    <input type="text" required id='fname' name="fname" placeholder="Enter Your full name">
+                    <label for="mail">Email ID:</label>
+                    <input type="email" required id='mail' name="mail" placeholder="Enter Your Email ID">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" required id='phone' name="phone" placeholder="Enter Your Phone Number">
+
+                    <label for="password">Password:</label>
+                    <input type="password" required id="password" name="password" placeholder="Enter password">
+                    <label for="password2"> Confirm Password:</label>
+                    <input type="password" required id="password2" name="password2" placeholder="Re-Enter password">
+                    <center>
+                        <input type="submit" value="Submit" class="btn">
+                    </center>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="offers">
+        <h2 class="secondary center">Offers</h2>
+        <p class="secondary center">Wanna play a game.. So here are the rules. Choose a no. among the given choices. We
+            will then generate a random no. between 0 and 100. The absolute value of the difference between the no. you
+            choose and the no. we generate will be the % discount you get. How's the deal?? </p>
+        <div id="cards">
+            <div id="val1" class='btn' onclick="generateNumber(12)">
+                12
+            </div>
+            <div id="val2" class="btn" onclick="generateNumber(42)">42</div>
+            <div id="val3" class="btn" onclick="generateNumber(63)">63</div>
+            <div id="val4" class="btn" onclick="generateNumber(72)">72</div>
+            <div id="val5" class="btn" onclick="generateNumber(85)">85</div>
+        </div>
+        <div id="result">
+            <h2 class="center secondary" id="random">Random No: </h2>
+            <h2 class="center secondary" id="selected">Selected no.: </h2>
+            <h2 class="center secondary" id="discount">Discount: </h2>
+
+        </div>
+    </section>
+    <section id="subscribe">
+        <div class="box" id="sub">
+            <h2 class="secondary center">Subscription Form</h2>
+            <p class="secondary center">Pay to keep news free. Subscribe to The Banana Republic to support our
+                independent journalism and be the first to access our articles and stories.</p>
+            <form name="subform">
+                <label for="fname">Full Name:</label>
+                <input type="text" required id='fname' name="fname" placeholder="Enter Your full name">
+                <label for="mail">Email ID:</label>
+                <input type="email" required id='mail' name="mail" placeholder="Enter Your Email ID">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" required id='phone' name="phone" placeholder="Enter Your Phone Number">
+                <label for="payment">Choose a Subscription period:</label>
+                <div id="pay">
+
+                    <label><input type="radio" name="period" value="49" id="weekly"> Weekly(Rs.49)
+                    </label>
+                    <label><input type="radio" name="period" value="210" id="monthly">Monthly(Rs.210)
+                    </label>
+                    <label><input type="radio" name="period" value="2520" id="annual"> Annual(Rs. 2520)</label>
+
+                </div>
+
+
+            </form>
+            <center><button class="btn" onclick=" return validateSubscribe()">Procced to Checkout</button></center>
+        </div>
+    </section>
+    <section id="reviews">
+        <h2 class="secondary center">Reviews</h2>
+        <p class="secondary center">Write about us and our journalism and help us improve and stay relevant.</p>
+        <form name="reviewform">
+            <input type="text" name="fname" required placeholder="Enter your name">
+            <textarea name="content" id="cont" cols="30" rows="10" placeholder="Enter your review here"></textarea>
+            <br>
+
+        </form>
+        <input type="submit" value="Submit" class="btn" onclick=" return displayReview()">
+    </section>
+    <section id="dispreview">
+        <h2 class="secondary center">
+            Reviews
+        </h2>
+
+    </section>
+    <footer id="footer">
+        <div class="center"> Copyright &copy; www.thebananarepublic.com. All rights reserved!</div>
+    </footer>
+</body>
+
+</html>
