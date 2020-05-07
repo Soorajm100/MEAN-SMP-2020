@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NEWS WEBSITE</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl1e.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+      body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: beige;
+  }
+
+  
+    </style>
+  
+    
+</head>
+
+<body>
+  
+  <div class="navbar-fixed">
+    <nav class="teal">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" style="float: left;"><img src="logo.png" alt="" width="50px" height="50px"></a>
+          <a href="#!" class="brand-logo">News Website</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+           <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="login1.html">Login</a>
+            </li>
+            <li>
+              <a href="newsignup.html">SignUp</a>
+            </li>
+            <li>
+              <a href="subscription.html">Subscribe</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <a href="#home">Home</a>
+      </li>
+      <li>
+        <a href="login1.html">Login</a>
+      </li>
+      <li>
+        <a href="newsignup.html">SignUp</a>
+      </li>
+      <li>
+        <a href="subscription.html">Subscribe</a>
+      </li>
+    </ul>
+    <br>
+
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="images/image1.jpg" >
+          <div class="caption center-align">
+            <h3 class="black-text">COVID Cases in India go past 50K</h3>
+            <h5 class="black-text">Mumbai worst hit!</h5>
+          </div>
+        </li>
+        <li>
+          <img src="images/image-2.jpg"> 
+          <div class="caption left-align">
+            <h3 class="black-text">Israel claim COVID vaccine close</h3>
+            <h5 class=" black-text">Promises to share with the world</h5>
+          </div>
+        </li>
+        <li>
+          <img src="images/halo-2.jpg"> 
+          <div class="caption left-align">
+            <h3 class="white-text">Halo 2 coming to PC on May 12</h3>
+            <h5 class="white-text">Halo 3 expected in few months</h5>
+          </div>
+        </li>
+        <li>
+          <img src="images/image3.jpg"> 
+          <div class="caption center-align">
+            <h3>Tension at the border</h3>
+            <h5 class="black-text">Major terrorist shot down</h5>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <footer class="page-footer teal">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Any Comments?</h5>
+            
+          </div>
+          <br>
+          
+          <div class='row'>
+            
+            
+              <input type="text" placeholder= "Enter Name" columns="15"/><br>
+              <textarea id="comment" placeholder="Type comment here" rows = "6" columns = "40" ></textarea><br>
+              <button  type="button"  class='col s2 btn btn-small waves-effect black'>Submit Comment</button>
+              
+            
+          </div>
+          
+          
+
+         
+      
+    </footer>
+
+
+    
+
+
+    
+    
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.slider');
+    var instances = M.Slider.init(elems, options);
+  });
+    </script>
+    <script>
+    const sideNav = document.querySelector('.sidenav');
+    M.Sidenav.init(sideNav, {});
+    
+    
+    const slider = document.querySelector('.slider');
+      M.Slider.init(slider, {
+          
+          height: 600,
+          transition: 500,
+          interval: 2000
+        });</script>
+</body>
+
+</html>
