@@ -1,0 +1,100 @@
+/* Navigation Bar */
+#navbar
+{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 0.9rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+/* Home */
+#home{
+    height: 370px; 
+    padding: 3px 28px;
+}
+#home::before{
+    height: 480px; 
+}
+#home p{
+    font-size: 13px;
+}
+#home h1{
+    font-size: 35px;
+}
+/* Services */
+#services
+{
+    flex-direction: column;
+}
+#services .box { 
+    padding: 14px;
+    margin: 2px 0px; 
+    margin-bottom: 20px;
+    width:80%;
+}
+#service::before
+{
+    margin-top: 33px;
+    height: 1163px;
+}
+/* Offers */
+#offers::before
+{
+    height: 800px;
+
+}
+#offers h2
+{
+    font-size: 28px;
+}
+#offers p
+{
+    font-size: 20px;
+}
+#result h2{
+    font-size: 24px;
+}
+
+@media (max-width:410px)
+{
+    #subscribe .btn
+    {
+        height: 33px;
+    width: 119px;
+   }
+   #subscribe h2, #reviews h2
+   {
+    font-size: 30px;
+   }
+   #subscribe p, #reviews input[type="text"], #dispreview p
+   {
+       font-size: 22px;
+   }
+}
+/* @media (max-width:308px)
+{
+    #subscribe h2, #reviews h2 
+    {
+        font-size: 28px;
+
+    }
+    #subscribe p, #reviews input[type="text"] , #dispreview p
+    {
+        font-size: 16px;
+    }
+
+
+}
+@media (min-width:300px) and (max-width:370px)
+{
+    #price
+    {
+        font-size: 16px;
+    }
+}
+#cont
+{
+    height: 188px;
+} */
+

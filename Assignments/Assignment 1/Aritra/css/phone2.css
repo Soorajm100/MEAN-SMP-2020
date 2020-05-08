@@ -1,0 +1,25 @@
+@media (max-width:325px)
+{
+    #subscribe h2, #reviews h2 
+    {
+        font-size: 28px;
+
+    }
+    #subscribe p, #reviews input[type="text"] , #dispreview p
+    {
+        font-size: 16px;
+    }
+
+
+}
+@media (min-width:300px) and (max-width:370px)
+{
+    #price
+    {
+        font-size: 16px;
+    }
+}
+#cont
+{
+    height: 188px;
+}
