@@ -1,0 +1,33 @@
+
+<mat-toolbar color="primary" >
+       
+    <span class="toolbar">To-do list</span>
+
+  </mat-toolbar>
+  <ol>
+  <mat-card class="card" >
+
+      <li *ngFor="let todo of todos">
+        
+          <mat-card-title *ngIf="todo.id">Task:{{todo.id}}</mat-card-title>
+          <mat-card-content *ngIf="todo.id">
+            <button mat-icon-button (click)="delete(todo.id)" >
+              <mat-icon>delete</mat-icon>
+            </button>
+            {{todo.title}}
+          </mat-card-content>
+      </li>
+  
+  </mat-card>
+  </ol>
+<footer>
+    <mat-toolbar color="primary" >
+        <div class="btn">
+            <button mat-fab color="accent" (click)="openDialog()">
+              <mat-icon class="plus">add</mat-icon>
+            </button>
+          </div>
+    </mat-toolbar>
+    
+</footer>
+
