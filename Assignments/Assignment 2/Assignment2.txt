@@ -1,0 +1,21 @@
+Task 1:
+1.Using Angular make your previous assignment responsive with necessary changes in UI.
+2.Use at least 5 Angular material components, for example, navbar, toolbar, cards, buttons, etc in your app.
+3.Your newspaper app should have at least 2 components (e.g one to display news another for subscription form) feel free to add more components if you wish.
+4.Use the angular form field for the subscription part.
+5.Feel free to replace alert messages with an angular snack-bar component.
+6.While designing the form keep in mind to use data-binding concepts, Injecting services, use necessary directives wherever required. (Mandatory)
+7.In the comment section use Angular material components to take user comments and to display it. (e.g Take input using Dialog Module and display using the card,  the card can have two buttons to like and dislike the comment too).
+8.(optional) Make different modules and connect them by using routing concept.
+
+Task 2:(optional)
+Add editing task feature to the To-do list app.
+
+To-do list code is added to GitHub repo for reference.
+
+Routing concept is part of a reading assignment so make sure if you are not doing task 8, at least read about it and understand the concept.
+Submission will be the same as the previous assignment a new folder will be created for this Assignment.
+
+
+
+If you have any doubts you can contact any of the mentors. The due date for the assignment is 20th May 2020 11:59 pm
