@@ -1,0 +1,31 @@
+<h1 mat-dialog-title>Add Details of your post</h1>
+<div mat-dialog-content>
+    <p>Post Number:</p>
+    <mat-form-field>
+      <input matInput [(ngModel)]="data.id">
+    </mat-form-field>
+    <p>enter your dplink from fb or instagram or any oother source:</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.dplink">
+  </mat-form-field>
+  <p>enter your postlink(eg: news image):</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.postlink">
+  </mat-form-field>
+  <p>enter your pagelink(eg:get the link from any cnn or other news website):</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.pagelink">
+  </mat-form-field>
+  <p>enter your title(eg:name+posted_hours ago):</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.title">
+  </mat-form-field>
+  <p>enter your pagetitle (eg:whatever the news headlines is there just input it):</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.pagetitle">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button  >Add</button>
+</div>
