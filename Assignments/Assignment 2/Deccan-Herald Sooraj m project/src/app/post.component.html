@@ -1,0 +1,38 @@
+
+  <h1>Hello </h1>
+ 
+   
+  <ol *ngFor="let todo of todos">
+    
+    <div class="post">
+      <div class="info">
+          <img class="dp"  *ngIf="todo.dplink" src="{{todo.dplink}}">
+          <div class="wrapper">
+              <div class="username" style="color:blue ;font-weight: bolder;" *ngIf="todo.title1">{{this.title}} Posted 2 hour ago</div>
+              <div class="post-desc">check out some intresting news <mat-icon>thumb_up</mat-icon></div>
+  
+          </div>
+      </div>
+      
+      <img class="pic"  *ngIf="todo.postlink" src="{{todo.postlink}}" height="300" width="300">
+      <p style="text-decoration:none;font-weight: bolder;"><li *ngIf="todo.pagelink" ><b *ngIf="todo.pagetitle">{{todo.pagetitle}}</b></li></p>
+      <div class="likes-comments">
+          <i class="material-icons" style="color:var(--theme-color)">thumb_up</i>
+         
+          <i class="material-icons">thumb_down</i>
+          <i class="material-icons" style="font-size: 20px;">message</i>
+    
+          <i class="material-icons" style="font-size: 20px;">remove_red_eye</i>
+     
+  
+      </div>
+  </div>
+        
+     
+</ol>
+
+<div class="btn">
+    <button mat-fab color="accent" (click)="openDialog()">
+      <mat-icon class="plus">add</mat-icon>
+    </button>
+  </div>
