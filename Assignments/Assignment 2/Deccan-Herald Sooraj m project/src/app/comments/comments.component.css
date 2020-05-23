@@ -1,0 +1,24 @@
+textarea,input{
+    border:10px solid black;
+    width:400px
+}
+mat-card{
+    background:-webkit-radial-gradient(white,rgb(71, 199, 221));
+    width:1200px;
+    height:100px;
+    color:red;
+    background-repeat:none;
+    background-size: 100;
+    border-color:2px solid red
+
+}
+p{
+    font-style: bold;
+    
+}
+.dp{ 
+    height: 70px; 
+    border-radius:50%; 
+    text-align: left; 
+} 
+ 

@@ -1,0 +1,55 @@
+<h1 style="color:hotpink">Comments.......</h1>
+<div class="p-5 col-lg-8"> 
+	<form class="was-validated form-inline" #namesForm="ngForm"> 
+		 <div class="form-group"> 
+				 <input [(ngModel)] = "newName" type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required> 
+				 <div class="valid-feedback">
+
+				 </div>
+				 </div>
+				 </form>
+
+<br>
+
+
+<br>
+ <form class="form-horizontal was-validated" #commentForm="ngForm">
+	  <div class="form-group"> 
+		  <div class="col-lg-10" style="padding: 0px 0px 0px 0px;"> 
+			<textarea [(ngModel)] = "newComment" class="form-control" rows="3" id="comment" placeholder="Comment" name="comment" required></textarea>
+		
+			 </div> </div> 
+			</form>
+
+<form class="form-horizontal"> <div class="form-group">
+	 <div class="col-lg-10" style="padding: 0px 0px 0px 0px; width: 100%;">
+		 <button 
+		 [disabled]="namesForm.form.invalid || commentForm.form.invalid" type="submit" class="btn btn-outline-dark btn-block" (click) = "pushItem()" >Post</button>
+		 </div> </div>
+
+</form>
+
+<ul *ngFor="let entry of textUserNames">
+	<mat-card >
+	 <mat-card-title >
+		<p> <img class="dp" src="https://tse1.mm.bing.net/th?id=OIP.O8dsaeB4Y4E0H1bggpvvigHaFj&pid=Api&rs=1&c=1&qlt=95&w=135&h=101">
+		 {{entry.p}}</p>
+		</mat-card-title> 
+	</mat-card>
+	<br/>
+	 <mat-card>
+	 <ul >
+		  <mat-card-content>{{entry.t}}</mat-card-content></ul>
+		
+		  <table >
+		 <td> <button     (click)="like()" ><mat-icon  >thumb_up &nbsp;</mat-icon></button>
+		  <p *ngFor="let lik of li"> {{lik}}</p></td>
+		 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		
+		  <td><button   (click)="dist()" ><mat-icon >thumb_down &nbsp;</mat-icon></button>
+		  <p *ngFor="let ram of di" style="color: indigo;font-size: 30px;font-weight: bolder;"> {{ram}}</p></td>
+		</table>
+	 </mat-card> 
+	 <br/><br/><br/>
+	</ul>
+</div>

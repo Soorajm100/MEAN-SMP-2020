@@ -1,0 +1,66 @@
+
+
+
+<mat-toolbar color="primary" >
+  <button (click)="open=!open" style="color:red;"><mat-icon>menu</mat-icon></button>
+  <span class="toolbar" style="align-items: center;">The Decccan Herald</span>
+  
+</mat-toolbar>
+
+
+<mat-sidenav-container>
+  <mat-sidenav [(opened)]="open" >
+    
+    
+    <mat-toolbar>&nbsp;&nbsp;Menu</mat-toolbar>
+    <mat-toolbar>
+      
+    <a mat-list href="#"><mat-icon>home</mat-icon>&nbsp;&nbsp;Home</a> </mat-toolbar>
+    <mat-toolbar><a mat-list routerLink="/login-component" ><mat-icon>info</mat-icon>&nbsp;About Newspaper</a></mat-toolbar>
+   <mat-toolbar><a routerLink="/news-component"><mat-icon>emoji_objects</mat-icon>&nbsp;&nbsp;News update</a></mat-toolbar>
+   
+    <mat-toolbar><a mat-list routerLink="/login1-component"><mat-icon>face</mat-icon>&nbsp;&nbsp;Login</a></mat-toolbar>
+    <mat-toolbar><a mat-list  routerLink="/signup-component"><mat-icon>how_to_reg</mat-icon>&nbsp;&nbsp;Sign up</a></mat-toolbar>
+    <mat-toolbar><a mat-list  routerLink="/subscribe-form-component"><mat-icon>notifications</mat-icon>&nbsp;&nbsp;Subscribe</a></mat-toolbar>
+    <mat-toolbar><a routerLink="/bonanza-component"><mat-icon>stars</mat-icon>&nbsp;&nbsp;Bonanza</a></mat-toolbar>
+    <mat-toolbar><a mat-list routerLink=""><mat-icon>call</mat-icon>&nbsp;&nbsp;Contacts</a></mat-toolbar>
+    <mat-toolbar><a mat-list routerLink="/post-component"><mat-icon>contact_support</mat-icon>&nbsp;&nbsp;Address</a></mat-toolbar>
+    
+    
+   
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+ <br/>
+  
+  <marquee dir="ltr"><h1 style="color:blue;font-size:50px" scrollamout="50"><b>Live Updates</b></h1> </marquee>
+  <h1 style="color:green;text-align:center;font-size:35px">Display screen open menu for more</h1>
+  <router-outlet></router-outlet>
+
+
+
+    
+  
+ 
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> 
+<br/><br/><br/><br/><br/><br/><br/>
+<div style="background: rgb(48, 42, 42);">
+<app-comments></app-comments>
+</div>
+<footer>
+  <mat-toolbar color="primary" >
+      <div class="btn">
+          <button mat-fab color="accent" >
+            <mat-icon class="plus">add</mat-icon>
+          </button>
+        </div>
+  </mat-toolbar>
+</footer>
+
+  </mat-sidenav-content>
+  
+</mat-sidenav-container>
+
+
+
