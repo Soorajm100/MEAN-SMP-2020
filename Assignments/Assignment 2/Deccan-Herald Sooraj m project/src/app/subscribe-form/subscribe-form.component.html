@@ -1,0 +1,95 @@
+
+<div class="container">
+    <div [hidden]="submitted">
+    <h1>Subscription Form</h1>
+    <form (ngSubmit)="onSubmit()" #subscribeform="ngForm">
+        <div class="form-group">
+            <label for="name" class="form-control" id="name" required>Name</label>
+            <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" name="name" #name="ngModel">
+        
+        <div [hidden]="name.valid || name.pristine"
+     class="alert alert-danger">
+  Name is required
+</div>
+</div>
+        <div class="form-group">
+            <label for="email" class="form-control" id="email" required>E-mail</label>
+            <input type="text" class="form-control" id="email" required [(ngModel)]="model.email" name="email" #email="ngModel">
+        
+        <div [hidden]="email.valid || email.pristine"
+        class="alert alert-danger">
+     E-mail is required
+   </div>
+</div>
+        <div class="form-group">
+            <label for="adress" class="form-control" id="address" required>Address</label>
+            <input type="text" class="form-control" id="address" required [(ngModel)]="model.address" name="address" #address="ngModel">
+        
+        <div [hidden]="address.valid || address.pristine"
+        class="alert alert-danger">
+     Address is required
+   </div>
+</div>
+        <div class="form-group">
+            <label for="phonenumber" class="form-control" id="phonenumber" required>Phone-number</label>
+            <input type="text" class="form-control" id="phonenumber" required [(ngModel)]="model.phonenumber" name="phonenumber" #phonenumber="ngModel">
+        
+    
+    <div [hidden]="phonenumber.valid || phonenumber.pristine" class="alert alert-danger">
+ Phone-number is required
+</div>
+</div>
+ <div class="form-group">
+            <label for="plan">Plan-Subscription</label>
+            <select class="form-control" id="plan" required [(ngModel)]="model.plans" name="plan" #plan="ngModel">
+              <option *ngFor="let pl of plans" [value]="pl" >{{pl}}</option>
+            </select>
+            <div [hidden]="plan.valid || plan.pristine" class="alert alert-danger">
+                Plan is required
+              </div>
+        </div>
+
+
+        <br/><br/><br/>
+            <button type="submit" class="btn btn-success"  [disabled]="!subscribeform.form.valid" >Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" class="btn btn-default" (click)="newHero();subscribeform.reset()">Reset</button>
+             
+              
+      
+    </form>
+    
+</div>
+<div [hidden]="!submitted">
+    <h2>You submitted the following:</h2>
+    <div class="row">
+      <div class="col-xs-3">Name</div>
+      <div class="col-xs-9">{{ model.name }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">E-mail</div>
+      <div class="col-xs-9">{{ model.email }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Address</div>
+      <div class="col-xs-9">{{ model.address }}</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3">Phone-Number</div>
+        <div class="col-xs-9">{{ model.phonenumber }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">Plans</div>
+        <div class="col-xs-9">{{ model.plans }}</div>
+      </div>
+    <br>
+    
+    <button class="btn btn-primary" (click)="submitted=false">Edit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <button class="btn btn-primary" (click)="openSnackBar('Your subscription is added', 'Done!!!')">Done</button>
+    
+      
+  </div>
+</div>
+

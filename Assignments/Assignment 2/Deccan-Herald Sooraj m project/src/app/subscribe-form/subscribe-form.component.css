@@ -1,0 +1,11 @@
+@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+.ram{
+    background: repeating-radial-gradient(red,yellow);
+    object-position: center;
+}
+p{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
