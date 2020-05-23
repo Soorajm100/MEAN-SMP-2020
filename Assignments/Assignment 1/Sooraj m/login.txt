@@ -1,0 +1,136 @@
+<html>
+<head>
+    <title>News Hindu</title>
+</head>
+<script type="text/javascript">
+function reset()
+{
+    var name;
+    name=' ';
+
+}
+
+</script>
+<style type="text/css">
+body{
+    background:-webkit-linear-gradient(green,blue);
+    height:100%;
+    width:100%;
+    
+    background-size: 100%;
+    }
+input{
+background-color: #d6d7da;
+}
+td,tr{
+    background-color:blue ;
+    border:2 px solid black
+}
+th{
+    background-color: pink;
+}
+
+#frame{
+    position: absolute;
+    top:0px;
+    left:0px;
+    bottom: 0px;
+    right:0;
+    width:200px;
+    height:100%;
+    overflow:hidden;
+    background: black;
+    color: white;
+
+
+}
+#main{
+position:fixed;
+top:0px;
+left:210px;
+right:0;
+bottom:0px;
+overflow:auto;
+
+}
+.vmenu{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    width:180px;
+}
+
+.vmenu p{
+    background: yellow no-repeat right top;
+    font:bold 13px "Lucida Grande","Trebuchet MS",Verdana;
+    display:block;
+    color:red;
+    width:auto;
+    padding:5px 0;
+    text-indent:8px;
+    text-decoration: none;
+    border-bottom: 1px solid blue;
+    width:180px;
+    }
+ .vmenu p{
+     background: yellow no-repeat right top;
+    font:bold 13px "Lucida Grande","Trebuchet MS",Verdana;
+    display:block;
+    color:red;
+    width:auto;
+    padding:5px 0;
+    text-indent:8px;
+    text-decoration: none;
+    border-bottom: 1px solid blue;
+
+ }
+ .vmenu p:hover{
+     background-color: white;
+     color:black;
+     border-bottom: 1px solid black;
+ }
+
+
+</style>
+<body>
+<div id="frame">
+<div class="vmenu">
+    <br/>
+    <br/>
+    <br/>
+    <menu>
+        <p><a href="thehindu.html" style="text-decoration: none;">Home</a></p>
+        <p>Contacts</p>
+        <p><a href="https://en.wikipedia.org/wiki/The_Hindu" style="text-decoration: none;">About News paper</a></p>
+        <p><input type="hidden" onclick="alert('The contact number is 9988776655')" value="Adress" >Adress</p>
+        <p>Telephone</p>
+        <p>Support</p>
+    </menu>
+</div>
+</div>
+<div id="main">
+<center>
+    <br/><br/><br/><br/><br/><br/><br/><br/>
+    <table style="border:2px solid black" >
+<form type="name">
+    <tr>
+    <th><h1><center><font size="50" color="red">Login</font></center></h1></th>
+      </tr> 
+      <tr>
+   <td><font  color="red" face="arial black">USERNAME: </font><input type="text" id="name" type="text" placeholder="Enter username...." required></td>
+      </tr>
+
+      <tr>
+   <td><font color="red" face="arial black">Password:&nbsp&nbsp&nbsp    </font><input type="password" placeholder="Enter password..."  required></td>>
+   </tr>
+   <tr>
+   <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="thehindu.html"><input type="submit" value="Login" onclick="alert('Hello '+document.getElementById('name').value+' You have been able to succesfully Log in ');"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp
+   <input type="reset" value="Reset" onclick="reset">
+   </tr>
+</form>
+</table>
+</center>
+</div>
+</body>
+</html>

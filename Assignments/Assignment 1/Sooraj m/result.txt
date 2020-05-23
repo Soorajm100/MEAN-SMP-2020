@@ -1,0 +1,10 @@
+<html>
+<head>
+    <title>Results of search</title>
+</head>
+<body>
+    <h1>No results found</h1>
+<p><b>For Further information click on below</b></p>
+<a href=https://www.google.com/">Click on this</a>
+</body>
+</html>
